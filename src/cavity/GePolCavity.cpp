@@ -21,7 +21,6 @@
  * PCMSolver API, see: <http://pcmsolver.readthedocs.io/>
  */
 
-#include "GePolCavity.hpp"
 
 #include <algorithm>
 #include <cctype>
@@ -43,6 +42,8 @@
 #include "utils/MathUtils.hpp"
 #include "utils/Sphere.hpp"
 #include "utils/Symmetry.hpp"
+
+#include "GePolCavity.hpp"
 
 namespace pcm {
 namespace cavity {

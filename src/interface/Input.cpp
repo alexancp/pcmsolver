@@ -21,6 +21,10 @@
  * PCMSolver API, see: <http://pcmsolver.readthedocs.io/>
  */
 
+#include <sys/select.h>        
+#include <sys/types.h>         
+#include <unistd.h> 
+
 #include "Input.hpp"
 
 #include <algorithm>

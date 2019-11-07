@@ -21,11 +21,14 @@
  * PCMSolver API, see: <http://pcmsolver.readthedocs.io/>
  */
 
-#include "ICavity.hpp"
 
 #include <iostream>
+#include <sys/select.h>        
+#include <sys/types.h>         
+#include <unistd.h> 
 
 #include "Config.hpp"
+
 
 #include <Eigen/Core>
 
@@ -33,6 +36,7 @@
 #include "utils/Sphere.hpp"
 #include "utils/Symmetry.hpp"
 #include "utils/cnpy.hpp"
+#include "ICavity.hpp"
 
 namespace pcm {
 ICavity::ICavity() : nElements_(0), built(false) {}

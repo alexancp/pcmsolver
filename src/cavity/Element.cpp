@@ -21,10 +21,13 @@
  * PCMSolver API, see: <http://pcmsolver.readthedocs.io/>
  */
 
-#include "Element.hpp"
 
 #include <cmath>
 #include <vector>
+
+#include <sys/select.h>        
+#include <sys/types.h>         
+#include <unistd.h>
 
 #include "Config.hpp"
 
@@ -34,6 +37,7 @@
 
 #include "utils/MathUtils.hpp"
 #include "utils/Sphere.hpp"
+#include "Element.hpp"
 
 namespace pcm {
 namespace cavity {

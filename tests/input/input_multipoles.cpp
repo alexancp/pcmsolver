@@ -23,6 +23,10 @@
  */
 /* pcmsolver_copyright_end */
 
+#include <sys/select.h>        
+#include <sys/types.h>         
+#include <unistd.h> 
+
 #include "catch.hpp"
 
 #include <iostream>
